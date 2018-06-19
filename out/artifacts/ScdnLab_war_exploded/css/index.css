@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+body, html {
+	height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
+.menu {
+	display: none;
+}
+
+.bgimg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("assets/iict_sust.jpg");
+	min-height: 90%;
+}
+
+.grid-photo-bg {
+	background-color: white;
+}
+
+.grid-photo-bg h2 {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.grid-photos {
+	width: 100%;
+}
+
+.grid-photos:hover {
+	opacity: 0.7;
+}
+.page {
+	display: none;
+}
+.page-active {
+	display: block;
+}
+.pagination-div {
+	margin: auto;
+	width: 50%;
+}
