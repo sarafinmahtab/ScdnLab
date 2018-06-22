@@ -57,14 +57,15 @@ $(document).ready(function() {
         /*	data : "name=" + name + "&email=" + email, */
         dataType: 'json',
         success : function(msg) {
-            alert("Success " + msg);
-            console.log("Showing JSON");
+
+            var lastPageNo = Math.floor(msg.length/3) + Math.ceil((msg.length%3)/3);
+            console.log("Total Pages in Pagination : " + lastPageNo);
 
             $pagination.twbsPagination('destroy');
 
             $pagination.twbsPagination($.extend({}, defaultOpts, {
 
-                totalPages: Math.abs(msg.length/3 + (msg.length%3)/3) + 1,
+                totalPages: lastPageNo,
 
                 visiblePages: 3,
 
@@ -73,6 +74,10 @@ $(document).ready(function() {
                     console.log(page);
 
                     for (var viewId = 1; viewId <= 3; viewId++) {
+
+                        if (page === lastPageNo && msg.length%3 !== 0) {
+                            break;
+                        }
 
                         var index = 3 * (page-1) + viewId - 1;
 
@@ -87,22 +92,31 @@ $(document).ready(function() {
                         $('#achieveHeader'+viewId).html("<b>" +title + "</b>");
                         $('#achievePara'+viewId).text(details);
                     }
+
+                    if (page === lastPageNo && msg.length%3 !== 0) {
+
+                        console.log("Last Page. Mode not zero");
+
+                        var indexTemp = msg.length - 3;
+
+                        for (var viewIdIf = 1; viewIdIf <= 3; viewIdIf++) {
+
+                            var indexIf = indexTemp + viewIdIf - 1;
+
+                            var idIf = msg[indexIf].achievementId;
+                            var titleIf = msg[indexIf].achievementTitle;
+                            var detailsIf = msg[indexIf].achievementDetails;
+                            var imagePathIf = msg[indexIf].imagePath;
+                            var postTimeIf = msg[indexIf].postTimeStamp;
+
+                            console.log(idIf + " : " + titleIf);
+
+                            $('#achieveHeader'+viewIdIf).html("<b>" +titleIf + "</b>");
+                            $('#achievePara'+viewIdIf).text(detailsIf);
+                        }
+                    }
                 }
             }));
-/*
-            for (var index = 0; index < msg.length; index++) {
-                var id = msg[index].achievementId;
-                var title = msg[index].achievementTitle;
-                var details = msg[index].achievementDetails;
-                var imagePath = msg[index].imagePath;
-                var postTime = msg[index].postTimeStamp;
-
-                console.log("Id: " + id);
-                console.log("Title: " + title);
-                console.log("Image Path: " + imagePath);
-                console.log("Details: " + details);
-                console.log("Post Time: " + postTime);
-            } */
         },
         error : function(msg) {
             alert("Error " + msg);

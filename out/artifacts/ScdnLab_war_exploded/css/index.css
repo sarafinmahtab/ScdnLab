@@ -15,7 +15,6 @@ body, h1, h2, h3, h4, h5, h6 {
 .bgimg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("assets/iict_sust.jpg");
 	min-height: 90%;
 }
 
@@ -44,4 +43,29 @@ body, h1, h2, h3, h4, h5, h6 {
 .pagination-div {
 	margin: auto;
 	width: 50%;
+}
+
+.founder {
+	border: 10px solid transparent;
+	width: 40%;
+	height: 40%;
+}
+.founder:hover {
+	border-color: #f1f1f1;
+    opacity: 0.7;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+}
+
+.button:hover {
+    background-color: #555;
 }
