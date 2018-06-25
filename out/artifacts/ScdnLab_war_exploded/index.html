@@ -3,173 +3,85 @@
 <head>
 
     <title>SUST CSE Developers Network Lab</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat"
-        rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato"
-        rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link
-        rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script
-        src="https://www.solodev.com/_/assets/pagination/jquery.twbsPagination.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.solodev.com/_/assets/pagination/jquery.twbsPagination.js"></script>
 
 </head>
 
 
 <body>
 
-	<!-- Navbar (sit on top) -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
+    <header id="header">
 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target="#myNavbar">
-					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
+        <div class="container">
 
-				<a class="navbar-brand" href="#">Logo</a>
-			</div>
+            <div id="logo" class="pull-left">
+                <a href="#home"><img src="img/logo.png" alt="" title="" /></a>
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <!--<h1><a href="#home">Regna</a></h1>-->
+            </div>
 
-			<div class="collapse navbar-collapse" id="myNavbar">
+            <nav id="nav-menu-container">
 
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#achievements">Achievement</a></li>
-					<li><a href="#googleMap">Contact</a></li>
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li class="menu-has-children"><a href="">Contests</a>
+                        <ul>
+                            <li><a href="https://scdnlab.com/codathon" target="_blank">Codathon</a></li>
+                            <!--
+                            <li class="menu-has-children"><a href="#">Drop Down</a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down</a></li>
+                                </ul>
+                            </li>
+                            -->
+                        </ul>
+                    </li>
 
-					<!---
-				<li class="dropdown">
-				  
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-					<span class="caret"></span>
-					</a>
-					
-					<ul class="dropdown-menu">
-						<li><a href="#">Merchandise</a></li>
-						<li><a href="#">Extras</a></li>
-						<li><a href="#">Media</a></li> 
-					</ul>
-				</li>
-				
-				<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-				-->
-				</ul>
-			</div>
-		</div>
-	</nav>
+                    <li><a href="#googleMap">Contact</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="assets/iict_sust1.jpg" alt="New York">
-				<!--
-				<div class="carousel-caption">
-					<h3>New York</h3>
-					<p>The atmosphere in New York is lorem ipsum.</p>
-				</div>
-				-->
-			</div>
-
-			<div class="item">
-				<img src="assets/iict_sust2.jpg" alt="Chicago">
-				
-				<!--
-				<div class="carousel-caption">
-					<h3>Chicago</h3>
-					<p>Thank you, Chicago - A night we won't forget.</p>
-				</div>
-				-->
-			</div>
-
-			<div class="item">
-				<img src="assets/iict_sust3.jpg" alt="Los Angeles">
-				
-				<!--
-				<div class="carousel-caption">
-            		<h3>LA</h3>
-            		<p>Even though the traffic was a mess, we had the best time.</p>
-				</div>
-				-->
-
-			</div>
-		</div>
-
-		<!-- Left and right controls -->
-		<a class="left carousel-control" href="#myCarousel" role="button"
-			data-slide="prev">
-			<span 
-				class="glyphicon glyphicon-chevron-left"
-				aria-hidden="true">
-			</span>
-
-			<span 
-				class="sr-only">Previous
-			</span>
-		</a>
-
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			<span
-				class="glyphicon glyphicon-chevron-right" 
-				aria-hidden="true">
-			</span>
-			
-			<span 
-				class="sr-only">Next
-			</span>
-		</a>
-
-	</div>
-
-	<!-- Header with image
-	<header class="bgimg container-fluid" id="home">
-	
-		<div class="w3-display-middle w3-center">
-			<span 
-				class="w3-text-white w3-hide-small" 
-				style="font-size:100px">SCDN Lab
-			</span>
-			
-			<span 
-				class="w3-text-white w3-hide-large w3-hide-medium" 
-				style="font-size:60px">
-					<b>thin<br>CRUST PIZZA</b>
-			</span>
-			
-			<p>
-				<a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a>
-			</p>
-		</div>
-		
-	</header> -->
+    <section id="home">
+        <div class="home-container">
+            <h1>Welcome to SCDN Lab</h1>
+            <h2>Nice to meet you!</h2>
+            <a href="#about" class="btn-get-started">Get Started</a>
+        </div>
+    </section>
 
 	<!-- About us Container -->
     <div class="row text-center" id="about">
@@ -189,7 +101,7 @@
 
             <div class="founder_div">
 
-                <img src="assets/founder_icon.png" class="img-circle founder" alt="Founder Name">
+                <img src="img/founder_icon.png" class="img-circle founder" alt="Founder Name">
 
                 <p class="text-center"><strong>Full Name</strong></p>
                 <p><small>Assistant Professor, Dept. of CSE, SUST</small></p>
@@ -199,7 +111,7 @@
 
             <div class="founder_div">
 
-                <img src="assets/founder_icon.png" class="img-circle founder" alt="Founder Name">
+                <img src="img/founder_icon.png" class="img-circle founder" alt="Founder Name">
 
                 <p class="text-center"><strong>Full Name</strong></p>
                 <p><small>Founder, Company</small></p>
@@ -213,52 +125,52 @@
 
     <!-- Achievements Photo Grid-->
     <div class="container-fluid grid-photo-bg" id="achievements">
-	
+
 		<h2 class="text-center">Achievements</h2>
-		
+
 		<div class="row">
-	    	
+
 	        <div class="col-sm-4">
-				<img 
-					src="assets/achievements/a1.jpg" 
+				<img
+					src="img/achievements/a1.jpg"
 					alt="Achievement"
 					class="img-responsive grid-photos" >
-				
+
 				<h4 id="achieveHeader1">
 					<b>Lorem Ipsum</b>
 				</h4>
-				
+
 				<p id="achievePara1">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
 					condimentum, porta lectus vitae, ultricies congue gravida diam non
 					fringilla.</p>
 			</div>
-			
+
 	        <div class="col-sm-4">
-				<img 
-					src="assets/achievements/a2.jpg"
+				<img
+					src="img/achievements/a2.jpg"
 					alt="Achievement"
 					class="img-responsive grid-photos" >
 
                 <h4 id="achieveHeader2">
 					<b>Lorem Ipsum Lorem Ipsum Lorem</b>
 				</h4>
-				
+
 				<p id="achievePara2">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
 					condimentum, porta lectus vitae, ultricies congue gravida diam non
 					fringilla.</p>
 			</div>
-			
+
 	        <div class="col-sm-4">
-	        
-				<img 
-					src="assets/achievements/a3.jpg"
+
+				<img
+					src="img/achievements/a3.jpg"
 					alt="Achievement"
 					class="img-responsive grid-photos" >
 
                 <h4 id="achieveHeader3">
 					<b>Lorem Ipsum</b>
 				</h4>
-				
+
 				<p id="achievePara3">Praesent tincidunt sed tellus ut rutrum.</p>
 			</div>
 		</div>
@@ -373,7 +285,7 @@
 		}
 		document.getElementById("myLink").click();
 	</script>
-	
+
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
 	</script>
@@ -381,11 +293,27 @@
 	To use this code on your website, get a free API key from Google.
 	Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 	-->
-	
-	<!-- jqueryAction.js -->
-	<script type="text/javascript" src="javascripts/jqueryAction.js">
-	</script>
 
+    <!-- JavaScript Libraries -->
+    <!--
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    -->
+
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- jqueryAction.js -->
+    <script type="text/javascript" src="js/jqueryAction.js"></script>
 </body>
 
 </html>
