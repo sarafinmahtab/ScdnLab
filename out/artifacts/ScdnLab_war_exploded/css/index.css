@@ -16,12 +16,25 @@ a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
+.container-fluid {
+    padding: 30px 30px;
+}
+
 p {
     padding: 0;
     margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.header {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+h1, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
@@ -348,6 +361,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     font-size: 13px;
     text-transform: none;
+    outline: none;
 }
 
 .nav-menu ul li a:hover {
@@ -482,11 +496,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-color: white;
 }
 
-.grid-photo-bg h2 {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
 .grid-photos {
     width: 100%;
 }
@@ -507,6 +516,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: auto;
     width: 50%;
     text-align: center;
+    color: #2dc997;
 }
 
 .founder {
@@ -534,4 +544,39 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .button:hover {
     background-color: #555;
+}
+
+.about-us-logo {
+    color: #555;
+    font-size: 200px;
+}
+
+#about {
+    background-color: rgba(226, 208, 214, 0.44);
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#about h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer {
+    background-color: #1b1e21;
+    color: white;
 }
