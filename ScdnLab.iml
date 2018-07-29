@@ -24,5 +24,7 @@
     <orderEntry type="library" name="gson-2.2.2" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.21" level="application" />
     <orderEntry type="library" name="jquery.easing" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
+    <orderEntry type="library" name="html5shiv" level="application" />
   </component>
 </module>
