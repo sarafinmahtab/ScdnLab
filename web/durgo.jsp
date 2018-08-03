@@ -32,6 +32,9 @@ To change this template use File | Settings | File Templates.
     }
 </script>
 
+<script type="text/javascript" src="js/changeDiv.js"></script>
+
+
 <%
     if (session.getAttribute("admin_name") != null) {
         String adminName = session.getAttribute("admin_name").toString();

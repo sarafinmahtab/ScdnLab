@@ -28,6 +28,24 @@
     <!-- Google Font -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+    <style>
+
+        #add-new-content table {
+            border-collapse: collapse;
+            background-color: white;
+            width: 100%;
+        }
+
+        #add-new-content th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+    </style>
+
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -59,7 +77,7 @@ desired effect
         <!-- Logo -->
         <a class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>A</b>dmin</span>
+            <span class="logo-mini"><b>S</b>CDN</span>
             <!-- logo for regular state and mobile devices -->
             <span class="logo-lg"><b>SCDN</b>Admin</span>
         </a>
@@ -270,7 +288,7 @@ desired effect
               </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#achievement_item_on">Achievements</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Events</a></li>
                     </ul>
@@ -285,9 +303,8 @@ desired effect
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>
-                Page Header
-                <small>Optional description</small>
+            <h1 id="page_header">
+                <!--<small>Optional description</small>-->
             </h1>
             <!--<ol class="breadcrumb">-->
             <!--<li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>-->
@@ -296,7 +313,7 @@ desired effect
         </section>
 
         <!-- Main content -->
-        <section class="content container-fluid">
+        <section class="content container-fluid" id="add-new-content">
 
             <!--------------------------
               | Your Page Content Here |
