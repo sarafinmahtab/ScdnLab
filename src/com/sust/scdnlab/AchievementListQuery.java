@@ -14,7 +14,6 @@ public class AchievementListQuery {
 
 	public AchievementListQuery() {
 		connectionCheck = new ConnectionCheck();
-		System.out.println("AchievementListQuery constructor");
 		achievementList = new ArrayList<>();
 	}
 	
