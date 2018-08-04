@@ -1,11 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Arafin
-  Date: 03-Aug-18
-  Time: 10:46 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -35,6 +28,157 @@
     <!-- Google Font -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+    <style>
+
+        #add-new-content table {
+            border-collapse: collapse;
+            background-color: white;
+            padding: 16px;
+            width: 100%;
+        }
+
+        #add-new-content th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Full-width input fields */
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #138AB5;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .uploadBtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: rgba(164, 170, 180, 0.54);
+            color: #1a2226;
+        }
+
+        .updateBtn {
+            padding: 18px 18px;
+        }
+
+        /* Extra styles for the cancel button */
+        .deleteBtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        /* Center the image and position the close button */
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            /*width: 80%; !* Could be more or less, depending on screen size *!*/
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+
+        /* Add Zoom Animation */
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {-webkit-transform: scale(0)}
+            to {-webkit-transform: scale(1)}
+        }
+
+        @keyframes animatezoom {
+            from {transform: scale(0)}
+            to {transform: scale(1)}
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .deleteBtn {
+                width: 100%;
+            }
+        }
+
+    </style>
+
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -66,7 +210,7 @@ desired effect
         <!-- Logo -->
         <a class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>A</b>dmin</span>
+            <span class="logo-mini"><b>S</b>CDN</span>
             <!-- logo for regular state and mobile devices -->
             <span class="logo-lg"><b>SCDN</b>Admin</span>
         </a>
@@ -185,16 +329,18 @@ desired effect
                             <!-- The user image in the navbar-->
                             <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                            <span class="hidden-xs">Admin Name</span>
+                            <span class="hidden-xs" id="admin_name"> Admin Name </span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
                                 <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                                <p>
-                                    Content Creator
-                                    <!--<small>Member since Nov. 2012</small>-->
+                                <p id="admin_type">
+                                    Creator
+                                </p>
+                                <p id="gmail">
+                                    <small>arafin@gmail.com</small>
                                 </p>
                             </li>
                             <!-- Menu Body -->
@@ -218,7 +364,7 @@ desired effect
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    <a href="login.jsp" class="btn btn-default btn-flat">Sign out</a>
                                 </div>
                             </li>
                         </ul>
@@ -244,7 +390,7 @@ desired effect
                     <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Admin Name</p>
+                    <p id="sidebar_admin_name" >Admin Name</p>
                     <!-- Status -->
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
@@ -266,7 +412,7 @@ desired effect
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">HEADER</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Role</span></a></li>
+                <li class="active" id="role_manager"><a href="#"><i class="fa fa-link"></i> <span>Role</span></a></li>
                 <!--<li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>-->
                 <li class="treeview">
                     <a href="#"><i class="fa fa-link"></i> <span>Tables</span>
@@ -275,7 +421,7 @@ desired effect
               </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="achievementEntry.jsp">Achievements</a></li>
+                        <li><a href="#achievement_item_on">Achievements</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Events</a></li>
                     </ul>
@@ -290,9 +436,8 @@ desired effect
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>
-                Page Header
-                <small>Optional description</small>
+            <h1 id="page_header">
+                <!--<small>Optional description</small>-->
             </h1>
             <!--<ol class="breadcrumb">-->
             <!--<li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>-->
@@ -301,50 +446,12 @@ desired effect
         </section>
 
         <!-- Main content -->
-        <section class="content container-fluid">
+        <section class="content container-fluid" id="add-new-content">
 
             <!--------------------------
               | Your Page Content Here |
               -------------------------->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="bgc-white bd bdrs-3 p-20 mB-20"><h4 class="c-grey-900 mB-20">Simple Table</h4>
-                        <p>Using the most basic table markup, here’s how <code class="highlighter-rouge">.table</code>-based
-                            tables look in Bootstrap. <strong>All table styles are inherited in Bootstrap 4</strong>,
-                            meaning any nested tables will be styled in the same manner as the parent.</p>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">Username</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+
         </section>
         <!-- /.content -->
     </div>
@@ -436,17 +543,57 @@ desired effect
     <!-- Add the sidebar's background. This div must be placed
     immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
+
+    <div id="updateAchieveDialog" class="modal">
+
+        <form class="modal-content animate" action="updateAchievement.jsp">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('updateAchieveDialog').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+            </div>
+
+            <div class="container">
+                <input id="formTitle" type="text" placeholder="Achievement Title" name="text" required>
+
+                <textarea id="formDetails" placeholder="Achievement Details" name="text" required></textarea>
+
+                <label class="text-center">
+                    <input id="formLink" type="text" placeholder="Achievement Image Link" name="text" required>
+                    <button type="submit" class="uploadBtn">Upload</button>
+                </label>
+
+                <button type="submit" class="updateBtn">Update</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('updateAchieveDialog').style.display='none'" class="deleteBtn">Delete This Record</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('updateAchieveDialog');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="dist/js/adminlte.min.js" type="text/javascript"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

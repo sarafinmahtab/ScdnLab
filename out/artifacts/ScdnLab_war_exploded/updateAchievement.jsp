@@ -1,17 +1,14 @@
-<%--
+<%@ page import="java.sql.*" %><%--
   Created by IntelliJ IDEA.
   User: Arafin
-  Date: 03-Aug-18
-  Time: 4:04 PM
+  Date: 04-Aug-18
+  Time: 5:03 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-<%@ page import="java.sql.*" %>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Login Result</title>
+    <title>Title</title>
 </head>
 <body>
 
@@ -25,20 +22,30 @@
 
 <%
     ResultSet resultSet;
-    if (request.getParameter("username") != null && request.getParameter("key") != null) {
+    if (request.getParameter("formTitle") != null
+            && request.getParameter("formDetails") != null
+                && request.getParameter("formLink") != null) {
+
+        System.out.println(session.getAttribute(""));
+
         try {
             String dbUserName = null;
             String dbPassWord = null;
-            String userName = request.getParameter("username");
-            String passWord = request.getParameter("key");
-            String sql = "SELECT * FROM `admin` WHERE `user_name` = ? AND `password` = ?;";
+
+            String formTitle = request.getParameter("formTitle");
+            String formDetails = request.getParameter("formDetails");
+            String formLink = request.getParameter("formLink");
+
+            String sql = "SELECT * FROM `admin` WHERE `user_name` = ? AND `password` = ? AND `title` = ?;";
 
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/scdn_lab", "root", "");
 
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1, userName);
-            ps.setString(2, passWord);
+            ps.setString(1, formTitle);
+            ps.setString(2, formDetails);
+            ps.setString(3, formLink);
+
             resultSet = ps.executeQuery();
 
             while (resultSet.next()) {

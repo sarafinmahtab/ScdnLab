@@ -61,7 +61,7 @@
 </script>
 <%
                 //                out.println("Login Successfull");
-                response.sendRedirect("durgo.jsp");
+                response.sendRedirect("dragon.jsp");
             } else {
                 session.setAttribute("login_failed", "Username or Password is incorrect");
                 response.sendRedirect("login.jsp");
