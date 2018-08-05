@@ -7,15 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f217c-84ac-4a8d-b2d2-87ade51a0fdc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sust/scdnlab/AchieveUpdateServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/WEB-INF/classes/com/sust/scdnlab/AchieveUpdateServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/updateAchievement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/updateAchievement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScdnLab/com/sust/scdnlab/AchieveUpdateServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sust/scdnlab/AchieveUpdateServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/dragon.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dragon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/dragon.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/dragon.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/updateAchievement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/updateAchievement.jsp" afterDir="false" />
     </list>
@@ -41,7 +40,7 @@
         <counts>
           <entry key="css" value="13" />
           <entry key="html" value="18" />
-          <entry key="java" value="9" />
+          <entry key="java" value="12" />
           <entry key="jpg" value="11" />
           <entry key="js" value="14" />
           <entry key="jsp" value="22" />
@@ -49,7 +48,7 @@
           <entry key="png" value="5" />
           <entry key="svg" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -57,12 +56,12 @@
           <entry key="CSS" value="13" />
           <entry key="HTML" value="18" />
           <entry key="Image" value="16" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="12" />
           <entry key="JSP" value="22" />
           <entry key="JavaScript" value="14" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SVG" value="1" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -72,7 +71,7 @@
           <entry key="html" value="1863" />
           <entry key="java" value="2" />
           <entry key="js" value="1217" />
-          <entry key="jsp" value="1761" />
+          <entry key="jsp" value="1799" />
           <entry key="xml" value="33" />
         </counts>
       </usages-collector>
@@ -81,7 +80,7 @@
           <entry key="CSS" value="47" />
           <entry key="HTML" value="1868" />
           <entry key="JAVA" value="2" />
-          <entry key="JSP" value="1760" />
+          <entry key="JSP" value="1798" />
           <entry key="JavaScript" value="1212" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="SQL" value="1" />
@@ -110,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/updateAchievement.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="245">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -119,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/dragon.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="161" column="73" lean-forward="true" selection-start-line="161" selection-start-column="73" selection-end-line="161" selection-end-column="73" />
+            <state relative-caret-position="218">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
             </state>
           </provider>
         </entry>
@@ -212,10 +211,10 @@
         <option value="$PROJECT_DIR$/web/durgo.html" />
         <option value="$PROJECT_DIR$/web/js/changeDiv.js" />
         <option value="$PROJECT_DIR$/src/com/sust/scdnlab/AchieveUpdateServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/dragon.html" />
-        <option value="$PROJECT_DIR$/web/dragon.jsp" />
         <option value="$PROJECT_DIR$/web/updateAchievement.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/dragon.jsp" />
       </list>
     </option>
   </component>
@@ -255,7 +254,7 @@
       <path value="$PROJECT_DIR$/web/bower_components/select2/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -309,7 +308,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533457465948" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533457468065" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Workspace/Jar Files/mysql-connector-java-5.1.21.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -466,16 +465,15 @@
       <workItem from="1532602315078" duration="1269000" />
       <workItem from="1532604350938" duration="31864000" />
       <workItem from="1533232073998" duration="47511000" />
-      <workItem from="1533435818481" duration="9588000" />
+      <workItem from="1533435818481" duration="11479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160996000" />
+    <option name="totallyTimeSpent" value="162887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -680,10 +678,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/dragon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="563" lean-forward="true" selection-start-line="563" selection-end-line="563" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sust/scdnlab/AchievementListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="86" lean-forward="true" selection-start-line="15" selection-end-line="16" />
+        <state relative-caret-position="425">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -696,32 +704,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dragon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="563" lean-forward="true" selection-start-line="563" selection-end-line="563" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="458">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/dragon.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="161" column="73" lean-forward="true" selection-start-line="161" selection-start-column="73" selection-end-line="161" selection-end-column="73" />
+        <state relative-caret-position="218">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/updateAchievement.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="245">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>

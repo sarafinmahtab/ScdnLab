@@ -156,10 +156,13 @@ To change this template use File | Settings | File Templates.
                                     //     achieve_details: details,
                                     //     achieve_path: imagePath},
                                     success: function (msg) {
-                                        alert(msg.toString());
+                                        console.log(msg);
+
+                                        // doc.getElementById('updateAchieveDialog').style.display='none';
                                     },
                                     error: function (msg) {
-                                        alert("Error " + msg.toString());
+                                        console.log(msg);
+
                                     }
                                 });
                             });

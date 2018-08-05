@@ -47,16 +47,16 @@
         ps.setString(3, achieveLink);
         ps.setString(4, achieveId);
 
-        int update = ps.executeUpdate();
+        int updatedRow = ps.executeUpdate();
 
-        System.out.println(update);
+        System.out.println(updatedRow);
 
-        if (update > 0) {
-            response.getWriter().print("Success");
+        if (updatedRow == 1) {
             response.sendRedirect("dragon.jsp");
+            response.getWriter().write("Success");
         } else {
-            response.getWriter().print("Failed");
             response.sendRedirect("dragon.jsp");
+            response.getWriter().write("Failed");
         }
 
     } catch (ClassNotFoundException | SQLException e) {
