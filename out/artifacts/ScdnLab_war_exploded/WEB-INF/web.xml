@@ -18,8 +18,19 @@
         <servlet-name>achievementListServlet</servlet-name>
         <servlet-class>com.sust.scdnlab.AchievementListServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AchieveUpdateServlet</servlet-name>
+        <servlet-class>com.sust.scdnlab.AchieveUpdateServlet</servlet-class>
+    </servlet>
+
+
     <servlet-mapping>
         <servlet-name>achievementListServlet</servlet-name>
         <url-pattern>/achievementListServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AchieveUpdateServlet</servlet-name>
+        <url-pattern>/AchieveUpdateServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

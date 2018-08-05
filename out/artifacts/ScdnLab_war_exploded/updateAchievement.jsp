@@ -14,69 +14,54 @@
 
 <script language="javascript" type="text/javascript">
 
-    function signInSuccess() {
-        document.getElementById("page_manage").style.display = "none";
+    function success() {
+
     }
 
 </script>
 
 <%
     ResultSet resultSet;
-    if (request.getParameter("formTitle") != null
-            && request.getParameter("formDetails") != null
-                && request.getParameter("formLink") != null) {
 
-        System.out.println(session.getAttribute(""));
+    try {
 
-        try {
-            String dbUserName = null;
-            String dbPassWord = null;
+        String achieveId = request.getParameter("achieve_id");
+        String achieveTitle = request.getParameter("achieve_title");
+        String achieveDetails = request.getParameter("achieve_details");
+        String achieveLink = request.getParameter("achieve_path");
 
-            String formTitle = request.getParameter("formTitle");
-            String formDetails = request.getParameter("formDetails");
-            String formLink = request.getParameter("formLink");
+        System.out.println(achieveId);
+        System.out.println(achieveTitle);
+        System.out.println(achieveDetails);
+        System.out.println(achieveLink);
 
-            String sql = "SELECT * FROM `admin` WHERE `user_name` = ? AND `password` = ? AND `title` = ?;";
+        String sql =
+                "UPDATE `achievement` SET `achievement_title` = ?, `achievement_details`= ?, `image_path` = ? WHERE `achievement_id` = ?;";
 
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/scdn_lab", "root", "");
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/scdn_lab", "root", "");
 
-            PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1, formTitle);
-            ps.setString(2, formDetails);
-            ps.setString(3, formLink);
+        PreparedStatement ps = connection.prepareStatement(sql);
+        ps.setString(1, achieveTitle);
+        ps.setString(2, achieveDetails);
+        ps.setString(3, achieveLink);
+        ps.setString(4, achieveId);
 
-            resultSet = ps.executeQuery();
+        int update = ps.executeUpdate();
 
-            while (resultSet.next()) {
-                dbUserName = resultSet.getString("user_name");
-                dbPassWord = resultSet.getString("password");
+        System.out.println(update);
 
-                session.setAttribute("admin_name", resultSet.getString("admin_name"));
-                if (resultSet.getInt("admin_type") == 1) {
-                    session.setAttribute("admin_type", "Super Admin");
-                } else if (resultSet.getInt("admin_type") == 2) {
-                    session.setAttribute("admin_type", "Content Creator");
-                }
-                session.setAttribute("gmail", resultSet.getString("gmail"));
-            }
-
-            if (userName.equals(dbUserName) && passWord.equals(dbPassWord)) {
-%>
-<script type="text/javascript">
-    signInSuccess();
-</script>
-<%
-                //                out.println("Login Successfull");
-                response.sendRedirect("dragon.jsp");
-            } else {
-                session.setAttribute("login_failed", "Username or Password is incorrect");
-                response.sendRedirect("login.jsp");
-            }
-        } catch (ClassNotFoundException | SQLException e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
+        if (update > 0) {
+            response.getWriter().print("Success");
+            response.sendRedirect("dragon.jsp");
+        } else {
+            response.getWriter().print("Failed");
+            response.sendRedirect("dragon.jsp");
         }
+
+    } catch (ClassNotFoundException | SQLException e) {
+        System.out.println(e.getMessage());
+        e.printStackTrace();
     }
 %>
 

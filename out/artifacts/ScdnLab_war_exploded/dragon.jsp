@@ -35,6 +35,13 @@ To change this template use File | Settings | File Templates.
 <script type="text/javascript">
 
     $(document).ready(function() {
+
+        var id = "Id";
+        var title = "Title";
+        var details = "Details";
+        var imagePath = "ImageLink";
+        var postTime = "Posted";
+
         $('a[href="#achievement_item_on"]').click(function(){
 
             $('#page_header').text("Table of Achievements");
@@ -47,12 +54,6 @@ To change this template use File | Settings | File Templates.
                 success : function(msg) {
 
                     // var table = $('<table>').addClass('foo');
-
-                    var id = "Id";
-                    var title = "Title";
-                    var details = "Details";
-                    var imagePath = "ImageLink";
-                    var postTime = "Posted";
 
                     var len = Object.keys(msg).length;
 
@@ -135,6 +136,33 @@ To change this template use File | Settings | File Templates.
                             $("#formTitle").val(this.getAttribute("achieve_title"));
                             $("#formDetails").val(this.getAttribute("achieve_details"));
                             $("#formLink").val(this.getAttribute("achieve_path"));
+
+                            var new_id = this.getAttribute("achieve_id");
+                            var new_title = this.getAttribute("achieve_title");
+                            var new_details = this.getAttribute("achieve_details");
+                            var new_path = this.getAttribute("achieve_path");
+
+                            $("#updateAchievement").click(function() {
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: "updateAchievement.jsp",
+                                    data : "achieve_id=" + new_id
+                                        + "&achieve_title=" + $("#formTitle").val()
+                                        + "&achieve_details=" + $("#formDetails").val()
+                                        + "&achieve_path=" + $("#formLink").val(),
+                                    // data: {achieve_id: id,
+                                    //     achieve_title: title,
+                                    //     achieve_details: details,
+                                    //     achieve_path: imagePath},
+                                    success: function (msg) {
+                                        alert(msg.toString());
+                                    },
+                                    error: function (msg) {
+                                        alert("Error " + msg.toString());
+                                    }
+                                });
+                            });
                         };
 
                         //does not trigger reflow
