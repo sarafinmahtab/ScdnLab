@@ -68,6 +68,11 @@
             box-sizing: border-box;
         }
 
+        .content-header h1 {
+            display: block;
+            float: left;
+        }
+
         /* Set a style for all buttons */
         button {
             background-color: #138AB5;
@@ -86,12 +91,20 @@
         .uploadBtn {
             width: auto;
             padding: 10px 18px;
-            background-color: rgba(164, 170, 180, 0.54);
-            color: #1a2226;
+            background-color: rgb(160, 180, 140);
         }
 
         .updateBtn {
-            padding: 18px 18px;
+            width: auto;
+            padding: 10px 18px;
+        }
+
+        .insertBtn {
+            display: block;
+            float: right;
+            width: auto;
+            padding: 10px 18px;
+            background-color: rgb(47, 180, 131);
         }
 
         /* Extra styles for the cancel button */
@@ -102,43 +115,31 @@
         }
 
         /* Center the image and position the close button */
-        .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-            position: relative;
-        }
-
-        .container {
-            padding: 16px;
-        }
 
         /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
+        .modal-dialog {
             overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            padding-top: 60px;
+            padding: 20px;
+            background-color: #fefefe;
+            /*background-color: rgba(0,0,0,0.4); !* Black w/ opacity *!*/
         }
 
         /* Modal Content/Box */
-        .modal-content {
+        .model-content {
             background-color: #fefefe;
-            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-            border: 1px solid #888;
-            /*width: 80%; !* Could be more or less, depending on screen size *!*/
+            margin: auto;
+        }
+
+        .model-footer {
+            /*float: right;*/
+            text-align: center;
         }
 
         /* The Close Button (x) */
         .close {
             position: absolute;
             right: 25px;
-            top: 0;
+            top: 20px;
             color: #000;
             font-size: 35px;
             font-weight: bold;
@@ -437,11 +438,16 @@ desired effect
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1 id="page_header">
-                <!--<small>Optional description</small>-->
+                <small>Optional description</small>
             </h1>
+
+            <button id="insert_record"
+                    type="button"
+                    style="display: none"
+                    class="insertBtn">Insert New Record</button>
             <!--<ol class="breadcrumb">-->
-            <!--<li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>-->
-            <!--<li class="active">Here</li>-->
+                <!--<li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>-->
+                <!--<li class="active">Here</li>-->
             <!--</ol>-->
         </section>
 
@@ -497,7 +503,7 @@ desired effect
                 <h3 class="control-sidebar-heading">Tasks Progress</h3>
                 <ul class="control-sidebar-menu">
                     <li>
-                        <a href="javascript:;">
+                        <a href="javascript:">
                             <h4 class="control-sidebar-subheading">
                                 Custom Template Design
                                 <span class="pull-right-container">
@@ -544,31 +550,49 @@ desired effect
     immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
 
-    <div id="updateAchieveDialog" class="modal">
+    <div id="updateAchieveDialog" class="modal animate">
 
-        <form class="modal-content animate">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('updateAchieveDialog').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+        <div class="modal-dialog">
+
+            <div class="model-content">
+
+                <div class="model-header">
+                    <h3>Update Achievement Record</h3>
+                    <span onclick="document.getElementById('updateAchieveDialog').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="model-body">
+                    <form>
+
+                        <input id="formTitle" type="text" placeholder="Achievement Title" name="text" required>
+
+                        <textarea id="formDetails" rows="5" placeholder="Achievement Details" name="text">
+                        </textarea>
+
+                        <div class="text-center">
+                            <p id="formLink">Achievement Link</p>
+
+                            <div class="btn-group">
+                                <button type="button" class="uploadBtn">Select Image</button>
+                                <button type="button" class="uploadBtn">Upload Image</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="model-footer">
+                    <button type="button"
+                            onclick="document.getElementById('updateAchieveDialog').style.display='none'"
+                            class="deleteBtn">Delete</button>
+
+                    <button type="submit"
+                            class="updateBtn"
+                            id="updateAchievement">Update</button>
+                </div>
+
             </div>
 
-            <div class="container">
-                <input id="formTitle" type="text" placeholder="Achievement Title" name="text" required>
-
-                <textarea id="formDetails" placeholder="Achievement Details" name="text" required></textarea>
-
-                <label class="text-center">
-                    <input id="formLink" type="text" placeholder="Achievement Image Link" name="text" required>
-                    <button type="submit" class="uploadBtn">Upload</button>
-                </label>
-
-                <button type="submit" class="updateBtn" id="updateAchievement">Update</button>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('updateAchieveDialog').style.display='none'" class="deleteBtn">Delete This Record</button>
-            </div>
-        </form>
+        </div>
     </div>
 
     <script>

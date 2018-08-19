@@ -36,13 +36,15 @@ To change this template use File | Settings | File Templates.
 
     $(document).ready(function() {
 
-        var id = "Id";
-        var title = "Title";
-        var details = "Details";
-        var imagePath = "ImageLink";
-        var postTime = "Posted";
-
         $('a[href="#achievement_item_on"]').click(function(){
+
+            document.getElementById('insert_record').style.display='block';
+
+            var id = "Id";
+            var title = "Title";
+            var details = "Details";
+            var imagePath = "ImageLink";
+            var postTime = "Posted";
 
             $('#page_header').text("Table of Achievements");
 
@@ -135,7 +137,7 @@ To change this template use File | Settings | File Templates.
 
                             $("#formTitle").val(this.getAttribute("achieve_title"));
                             $("#formDetails").val(this.getAttribute("achieve_details"));
-                            $("#formLink").val(this.getAttribute("achieve_path"));
+                            $("#formLink").text(this.getAttribute("achieve_path"));
 
                             var new_id = this.getAttribute("achieve_id");
                             var new_title = this.getAttribute("achieve_title");
@@ -176,7 +178,12 @@ To change this template use File | Settings | File Templates.
 
                     table.appendChild(fragment);
 
-                    doc.getElementById("add-new-content").appendChild(table);
+                    if (doc.getElementById("add-new-content").hasChildNodes()) {
+                        var oldTable = doc.getElementById("add-new-content").childNodes[0];
+                        doc.getElementById("add-new-content").replaceChild(table, oldTable);
+                    } else {
+                        doc.getElementById("add-new-content").appendChild(table);
+                    }
                 },
                 error : function(msg) {
                     alert("Error " + msg);
