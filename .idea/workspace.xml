@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f217c-84ac-4a8d-b2d2-87ade51a0fdc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/achievements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/achievements.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/achievement-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/dragon.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ScdnLab_war_exploded/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/dragon.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dragon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/dragon.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/dragon.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,25 +27,27 @@
     <session id="-700403892">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.115" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.73" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="17" />
-          <entry key="html" value="20" />
-          <entry key="java" value="12" />
+          <entry key="css" value="20" />
+          <entry key="html" value="23" />
+          <entry key="java" value="13" />
           <entry key="jpg" value="11" />
           <entry key="js" value="14" />
-          <entry key="jsp" value="28" />
+          <entry key="jsp" value="30" />
           <entry key="php" value="4" />
           <entry key="png" value="5" />
           <entry key="svg" value="1" />
@@ -52,11 +57,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="17" />
-          <entry key="HTML" value="20" />
+          <entry key="CSS" value="20" />
+          <entry key="HTML" value="23" />
           <entry key="Image" value="16" />
-          <entry key="JAVA" value="12" />
-          <entry key="JSP" value="28" />
+          <entry key="JAVA" value="13" />
+          <entry key="JSP" value="30" />
           <entry key="JavaScript" value="14" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SVG" value="1" />
@@ -65,21 +70,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="47" />
+          <entry key="css" value="50" />
           <entry key="dummy" value="13" />
-          <entry key="html" value="2364" />
-          <entry key="java" value="2" />
+          <entry key="html" value="2493" />
+          <entry key="java" value="9" />
           <entry key="js" value="1217" />
-          <entry key="jsp" value="2327" />
+          <entry key="jsp" value="2331" />
           <entry key="xml" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="47" />
-          <entry key="HTML" value="2369" />
-          <entry key="JAVA" value="2" />
-          <entry key="JSP" value="2326" />
+          <entry key="CSS" value="50" />
+          <entry key="HTML" value="2498" />
+          <entry key="JAVA" value="9" />
+          <entry key="JSP" value="2330" />
           <entry key="JavaScript" value="1212" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="SQL" value="1" />
@@ -96,20 +101,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/dragon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="194">
+              <caret line="573" lean-forward="true" selection-start-line="573" selection-end-line="573" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/dragon.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="40" column="75" lean-forward="true" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -121,16 +117,13 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login_result</find>
-      <find>admin name</find>
-      <find>Link</find>
       <find>Table</find>
       <find>achievementEntry.jsp</find>
       <find>Sign Out</find>
@@ -158,6 +151,9 @@
       <find>content</find>
       <find>page-header</find>
       <find>insertB</find>
+      <find>see</find>
+      <find>menu</find>
+      <find>page-top</find>
     </findStrings>
     <dirStrings>
       <dir>F:\StudyGround\WebEE\ScdnLab</dir>
@@ -193,8 +189,6 @@
         <option value="$PROJECT_DIR$/web/login.html" />
         <option value="$PROJECT_DIR$/web/css/login-style.css" />
         <option value="$PROJECT_DIR$/web/starter.html" />
-        <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/src/com/sust/scdnlab/AchievementListQuery.java" />
         <option value="$PROJECT_DIR$/web/starter.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/durgo.jsp" />
@@ -206,6 +200,11 @@
         <option value="$PROJECT_DIR$/web/dragon.jsp" />
         <option value="$PROJECT_DIR$/web/dist/css/AdminLTE.css" />
         <option value="$PROJECT_DIR$/web/dist/css/AdminLTE.min.css" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/achievements.jsp" />
+        <option value="$PROJECT_DIR$/web/css/achievement-style.css" />
+        <option value="$PROJECT_DIR$/web/achievements.html" />
+        <option value="$PROJECT_DIR$/src/com/sust/scdnlab/AchievementListQuery.java" />
         <option value="$PROJECT_DIR$/web/dragon.html" />
       </list>
     </option>
@@ -246,7 +245,7 @@
       <path value="$PROJECT_DIR$/web/bower_components/select2/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -268,36 +267,26 @@
             <path>
               <item name="ScdnLab" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScdnLab" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ScdnLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ScdnLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scdnlab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ScdnLab" type="b2602c69:ProjectViewProjectNode" />
               <item name="ScdnLab" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ScdnLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScdnLab" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ScdnLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScdnLab" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminLTE.css" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,7 +294,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/StudyGround/WebEE/ScdnLab/web/login.jsp" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533457468065" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534751063315" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Workspace/Jar Files/mysql-connector-java-5.1.21.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -466,18 +455,19 @@
       <workItem from="1533541308254" duration="1145000" />
       <workItem from="1534272355728" duration="9656000" />
       <workItem from="1534610330151" duration="596000" />
-      <workItem from="1534659158696" duration="6545000" />
+      <workItem from="1534659158696" duration="6753000" />
+      <workItem from="1534700477572" duration="691000" />
+      <workItem from="1534702377367" duration="7229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181599000" />
+    <option name="totallyTimeSpent" value="189727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.30862328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.31770045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -487,14 +477,14 @@
       <window_info id="Web" order="7" sideWeight="0.50242716" side_tool="true" weight="0.290469" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32843137" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32569557" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50226927" side_tool="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5030257" side_tool="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32843137" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -526,9 +516,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/index.min.js" />
-    <entry file="file://$PROJECT_DIR$/web/css/index.min.css" />
-    <entry file="file://$PROJECT_DIR$/web/package.json" />
     <entry file="file://$PROJECT_DIR$/web/lib/wow/wow.js" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
       <provider selected="true" editor-type-id="text-editor">
@@ -617,13 +604,6 @@
     <entry file="file://$PROJECT_DIR$/web/img/about.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sust/scdnlab/AchievementListQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/showPassword.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -632,13 +612,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/extra.txt" />
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="393" lean-forward="true" selection-start-line="393" selection-end-line="393" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/changeDiv.js" />
     <entry file="file://$PROJECT_DIR$/web/js/jqueryAction.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -690,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/dist/css/AdminLTE.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -709,15 +675,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/dragon.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="75" lean-forward="true" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
+        <state relative-caret-position="136">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6208">
+          <caret line="393" lean-forward="true" selection-start-line="393" selection-end-line="393" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="264" column="36" lean-forward="true" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/achievement-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sust/scdnlab/AchievementListQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/achievements.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/achievements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/dragon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="194">
+          <caret line="573" lean-forward="true" selection-start-line="573" selection-end-line="573" />
           <folding>
             <element signature="n#style#0;n#button#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
